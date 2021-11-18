@@ -1,19 +1,116 @@
-
-
-
-
-
-
-
-/*Import of icons*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css');
-
-/*Fonts use*/
-/*Tangerine*/
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Tangerine:wght@700&family=Text+Me+One&display=swap');
-/*MedievalSharp*/
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
-/*Text Me One*/
-@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&family=Text+Me+One&display=swap');
-/*Estonia*/
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bigshot+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Estonia&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.banner h1{
+    font-family: Tangerine;
+    font-size: 120px;
+    font-weight: bolder;
+    background-image: url(/img/golden.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: upndown 1s 0.5s forwards;
+}
+@keyframes upndown{
+    0%{
+        transform: translateY(20rem) rotateY(.30deg);
+    }
+    100%{
+        transform: translateY(0) rotateY(0);
+        opacity: 1;
+    }
+}
+
+.banner p{
+    font-weight: bolder;
+    background-image: url(/img/fogos.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Estonia;
+    font-size: 90px;
+    margin-top: 25px;
+    margin-left: 10%;
+    text-shadow: .2rem .2rem 0.5px #f8dd42;
+    opacity: 0;
+    animation: upndown 1s 0.7s forwards;
+}
+.banner{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+.img-banner{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+.img-banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    animation: zoom 12s;
+}
+@keyframes zoom{
+    0%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.banner button{
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-left: 110px;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    background-image: url(/img/golden.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-family: Bigshot One;
+    opacity: 0;
+    animation: upndown 1s 0.9s forwards;
+}.banner button:hover{
+    color: black;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 1.5rem 3.5rem;
+    border-radius: 10px;
+    background-image: url(/img/Porto-Portugal-Noite.jpg);
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-family: Abril Fatface;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+
