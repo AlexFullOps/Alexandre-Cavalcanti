@@ -8,6 +8,9 @@
     list-style: none;
     text-decoration: none;
 }
+body{
+  background-color: black;
+}
 /*Menu Hamburguer*/
 .hamburguer{
     background-image: url(/img/golden.jpg);
@@ -76,6 +79,50 @@
 .show-menu .hamburguer:hover span{
     opacity: 1;
 }
+/*Horizontal menu*/
+#menu-h{
+    background-image: url(/img/degradedourado.jpg);
+}
+
+#menu-h ul {
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+
+#menu-h ul li {
+    display: inline;
+}
+
+#menu-h ul li a {
+    background-image: url(/img/Porto-Portugal-Noite.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: BigShot One;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+
+#menu-h ul li a:hover {
+    background-image: url(/img/fogos.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: BigShot One;
+    font-size: 1.5rem;
+    margin-left: 50px;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/*Banner above*/
 header{
     width: 100%;
     height: 100vh;
@@ -84,15 +131,16 @@ header{
 }
 .banner h1{
     font-family: Tangerine;
-    font-size: 120px;
+    font-size: 70px;
     font-weight: bolder;
-    background-image: url(/img/golden.jpg);
+    background-image: url(/img/degradedourado.jpg);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     opacity: 0;
     animation: upndown 1s 0.5s forwards;
 }
+
 @keyframes upndown{
     0%{
         transform: translateY(20rem) rotateY(.30deg);
@@ -105,15 +153,14 @@ header{
 
 .banner p{
     font-weight: bolder;
-    background-image: url(/img/fogos.jpg);
+    background-image: url(/img/degradedourado.jpg);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: Estonia;
-    font-size: 90px;
+    font-size: 40px;
     margin-top: 25px;
-    margin-left: 10%;
-    text-shadow: .2rem .2rem 0.5px #f8dd42;
+    margin-left: 6%;
     opacity: 0;
     animation: upndown 1s 0.7s forwards;
 }
@@ -150,7 +197,7 @@ header{
     font-weight: bold;
     letter-spacing: .1rem;
     margin-top: 30px;
-    margin-left: 110px;
+    margin-left: 80px;
     padding: 1rem 3rem;
     border-radius: 10px;
     background-image: url(/img/golden.jpg);
@@ -167,7 +214,7 @@ header{
     margin-top: 15px;
     padding: 1.5rem 3.5rem;
     border-radius: 10px;
-    background-image: url(/img/Porto-Portugal-Noite.jpg);
+    background-image: url(/img/cristal.jpg);
     -webkit-text-fill-color: transparent;
     font-size: 20px;
     font-family: Abril Fatface;
@@ -203,7 +250,7 @@ header{
 .menu-link{
     font-family: Bigshot One;
     font-size: 1.3rem;
-    background-image: url(/img/cristal.jpg);
+    background-image: url(/img/degradedourado.jpg);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -214,25 +261,25 @@ header{
 .menu-link:hover{
     font-family: Bigshot One;
     font-size: 1.3rem;
-    background-image: url(/img/golden.jpg);
+    background-image: url(/img/cristal.jpg);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 5px;
     margin-top: 5px;
-    text-decoration: underline;
+    
    
 }
 .social-media{
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     width: 100%;
     display: flex;
     justify-content: space-around;
 
 }
 .social-media i{
-    background-image: url(/img/cristal.jpg);
+    background-image: url(/img/golden.jpg);
     background-size: cover;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -243,7 +290,7 @@ header{
     justify-content: center;
 }
 .social-media i:hover{
-    background-image: url(/img/golden.jpg);
+    background-image: url(/img/cristal.jpg);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 2.5rem;
@@ -252,6 +299,49 @@ header{
     transition: .5s;
     align-items: center;
 }
+
+
+/*Pr*/
+h2{
+    font-family: Tangerine;
+    font-size: 50px;
+    font-weight: bolder;
+    background-image: url(/img/degradedourado.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    
+     
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    background-image: url(/img/degradedourado.jpg);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+   
+}
+section{
+    width: 100%;
+    min-height: 60vh;
+    background-repeat: none;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    
+}
+section:nth-of-type(2){
+    background-image: url(/img/developer.jpg);
+}
+section:nth-of-type(4){
+    
+}
+
 
 
 
